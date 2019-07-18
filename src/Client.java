@@ -19,6 +19,12 @@ public class Client {
         System.out.println("-- Client online --");
     }
 
+    /**
+     * connect to the server with the specific port
+     *
+     * @param port the port to connect the server
+     * @throws IOException
+     */
     public void connect(int port) throws IOException {
         socket = new Socket(host, port);
         System.out.println("-- Communicate with port " + port + "--");
@@ -28,6 +34,7 @@ public class Client {
         connect(port);
         String message = null;
         while (true) {
+            /* waiting for message from the server */
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
