@@ -1,6 +1,6 @@
 # Chatter
 a project include the server and the client of a chatter program
 
-server:`Server.java`
+server: `Server.java` `Server.class`
 
-client:`Client.java`
+client: `Client.java` `Client.class`
